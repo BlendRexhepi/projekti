@@ -142,3 +142,38 @@ header ul li a{
 .controls li:nth-child(2):before{
     transform: rotate(225deg);
 }
+.contentBx{
+    position: absolute;
+    bottom: 0;
+    max-width: 700px;
+
+}
+.contentBx div{
+    display: none;
+} 
+.contentBx div.active{
+    display: block;
+    padding: 30px;
+    padding-left: 100px;
+    background: rgba(0,0,0, 0.2);
+}
+.contentBx div h2{
+    color: #fff;
+    font-size: 2em;
+}
+.contentBx div p{
+    color: #fff;
+    font-size: 1.em;
+    
+}
+.contentBx div a{
+    color:#111;
+    font-size: 1.1em;
+    display: inline-block;
+    padding:10px 30px ;
+    background: #fff;
+    margin-top: 10px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
