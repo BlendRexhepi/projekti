@@ -12,3 +12,17 @@ function PrevSlide(){
     i = (i - 1 + slides.length) % slides.length;
     slides[i].classList.add('active');
 }
+const contentBx = document.querySelector('.contentBx');
+const slidesText = contentBx.getElementsByTagName('div');
+var j = 0;
+
+function nextSlideText(){
+    slidesText[j].classList.remove('active');
+    j = (j + 1) % slidesText.length;
+    slidesText[j].classList.add('active');
+}
+function PrevSlideText(){
+    slidesText[j].classList.remove('active');
+    j = (j - 1 + slidesText.length) % slides.length;
+    slidesText[j].classList.add('active');
+}
