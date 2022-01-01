@@ -91,8 +91,8 @@ loginButton.addEventListener("click", function (event) {
     }
   }
 });
-<<<<<<< HEAD
-=======
+
+
 var registerButton = document.getElementById("registerButton");
 
 var usernameeMsg = document.getElementById("usernameeMsg");
@@ -147,4 +147,4 @@ registerButton.addEventListener("click", function (event) {
     }
   }
 });
->>>>>>> 113078b95b97fd290712044b762cccbd5718800e
+
