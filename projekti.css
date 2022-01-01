@@ -295,3 +295,9 @@ header ul li a{
     cursor: pointer;
     color:black;
 }
+.form1{
+    display: none;
+}
+.form{
+    display: none;
+}
