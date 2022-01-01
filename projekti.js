@@ -66,3 +66,57 @@ loginButton.addEventListener("click", function (event) {
     }
   }
 });
+var registerButton = document.getElementById("registerButton");
+
+var usernameeMsg = document.getElementById("usernameeMsg");
+var passworddMsg = document.getElementById("passworddMsg");
+var emailMsg = document.getElementById("emailMsg");
+
+var emailRegex = /^([\.\_a-zA-Z0-9]+)@([a-zA-Z]+)\.([a-zA-Z]){2,8}$/;
+var usernameeRegex = /\w+[._-]?\w+/;
+var passworddRegex = /^[A-Z][a-z]{5}\d{3}[!*._-]{1}/;
+
+registerButton.addEventListener("click", function (event) {
+  var usernamee = document.getElementById("usernamee").value;
+  var passwordd = document.getElementById("passwordd").value;
+  var email = document.getElementById("email").value;
+  //email validation
+  if (email == "" || email == null) {
+    emailMsg.innerText = "* Please fill the email field";
+    event.preventDefault();
+  } else {
+    if (emailRegex.test(email)) {
+      emailMsg.innerText = "";
+    } else {
+      emailMsg.innerText =
+        "* Please fill the email field correctly";
+      event.preventDefault();
+    }
+  }
+  if (usernamee == "" || usernamee == null) {
+    usernameeMsg.innerText = "* Please fill the username field";
+    event.preventDefault();
+  } else {
+    if (usernameRegex.test(username)) {
+      usernameeMsg.innerText = "";
+    } else {
+      usernameeMsg.innerText =
+        "* Please fill the username field correctly (ex. john123, 123john, john_john, john.123 etc)";
+      event.preventDefault();
+    }
+  }
+
+  //password validation
+  if (passwordd == "" || passwordd == null) {
+    passworddMsg.innerText = "* Please fill the password field";
+    event.preventDefault();
+  } else {
+    if (passwordRegex.test(password)) {
+      passworddMsg.innerText = "";
+    } else {
+      passworddMsg.innerText =
+        "* Your password must contain  1 uppercase, 5 lowercase letters, 3 digits and 1 symbol [!*-_.]";
+      event.preventDefault();
+    }
+  }
+});
