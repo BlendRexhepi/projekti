@@ -82,6 +82,15 @@ header ul li a{
      width: 100%;
      height: 100%;
  }
+ .loginR{
+    padding: 9px 25px;
+    background-color: transparent;
+    border-color: white;
+    border-radius: 50px;
+    color: white;
+    font-family: sans-serif;
+    cursor:pointer;
+}
  .banner{
     position: relative;
     width: 100%;
