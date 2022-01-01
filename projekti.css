@@ -310,3 +310,32 @@ header ul li a{
 .form{
     display: none;
 }
+.signup{
+    padding: 9px 25px;
+    background-color: transparent;
+    border-color: white;
+    border-radius: 50px;
+    color: white;
+    font-family: sans-serif;
+    cursor:pointer;
+}
+.exit{
+    padding: 9px 25px;
+    background-color: transparent;
+    border-color: white;
+    border-radius: 50px;
+    color: white;
+    font-family: sans-serif;
+    cursor:pointer;
+}
+.exit1{
+    margin-top: 5px;
+    margin-left: 60px;
+    padding: 9px 25px;
+    background: transparent;
+    font-size: 22px;
+    border-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
